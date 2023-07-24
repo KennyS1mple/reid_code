@@ -46,7 +46,7 @@ for epoch in range(opt.epochs):
     print("epoch: " + str(epoch) + "---loss: " + str(loss.item()) +
           "---acc: " + str((correct / len(my_dataset)).item()))
 
-    if epoch % 20 == 0 and epoch > 0:
+    if epoch % 10 == 0 and epoch > 0:
         save_model("./weight/dla_training_weights_{}.pth".format(epoch),
                    epoch, training_model, optimizer)
         print(f"model saved successfully.epoch:{epoch}")
