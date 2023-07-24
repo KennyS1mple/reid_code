@@ -1,3 +1,8 @@
+# CACIOUS CODING
+# Data     : 6/1/23  7:59 PM
+# File name: reid_training_model
+# Desc     : model for training, add fc
+
 import torch.nn as nn
 
 

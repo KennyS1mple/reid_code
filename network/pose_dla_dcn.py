@@ -1,3 +1,8 @@
+# CACIOUS CODING
+# Data     : 6/1/23  7:59 PM
+# File name: pose_dla_dcn.py
+# Desc     : model config
+
 from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
