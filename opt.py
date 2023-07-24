@@ -22,7 +22,7 @@ def opts():
                         help='path to training dataset')
     parser.add_argument('--epochs', default=100, type=int)
     parser.add_argument('--batch_size', default=64, type=int)
-    parser.add_argument('--IDn', default=30, type=int)
+    parser.add_argument('--IDn', default=67, type=int)
     parser.add_argument('--arch', default='dla_34',
                         help='model architecture. Currently tested'
                              'resdcn_34 | resdcn_50 | resfpndcn_34 |'

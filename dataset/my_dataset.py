@@ -56,7 +56,7 @@ class MyDataset(Dataset):
 
         img_path = self.imgs_path[idx]
         label = int(img_path.split('/')[-2])
-        img = np.asarray(Image.open(img_path), dtype=np.uint8)
+        img = np.asarray(Image.open(img_path).convert("RGB"), dtype=np.uint8)
 
         """ 翻转 """
         if random.random() > self.flip_odds:
