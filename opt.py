@@ -18,7 +18,7 @@ def opts():
                              '256 for resnets and 256 for dla.')
     parser.add_argument('--load_model', default='weight/dla_training_weights_20.pth', help='path to pretrained model')
     parser.add_argument('--dataset_path',
-                        default="/media/cacious/share/luggage_detect/reid_dataset/labeled/reid_dataset_0704",
+                        default="../dataset/reid_dataset_0724",
                         help='path to training dataset')
     parser.add_argument('--epochs', default=100, type=int)
     parser.add_argument('--batch_size', default=64, type=int)
