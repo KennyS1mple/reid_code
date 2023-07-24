@@ -16,7 +16,7 @@ def opts():
                              '0 for no conv layer'
                              '-1 for default setting: '
                              '256 for resnets and 256 for dla.')
-    parser.add_argument('--load_model', default='weight/dla_training_weights_20.pth', help='path to pretrained model')
+    parser.add_argument('--load_model', default='/home/cacious/Desktop/reid_weight/dla_training_weights_20.pth', help='path to pretrained model')
     parser.add_argument('--dataset_path',
                         default="../dataset/reid_dataset_0724",
                         help='path to training dataset')

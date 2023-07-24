@@ -44,10 +44,10 @@ model = model.model
 model = model.to(opt.device)
 model.eval()
 
-img1_path = "/home/cacious/Pictures/Screenshots/luggage0.png"
+img1_path = "/media/cacious/share/luggage_detect/reid_code/reid_code/dataset/0.png"
 img1 = pic2tensor(img1_path)
 
-img2_path = "/home/cacious/Pictures/Screenshots/luggage1.png"
+img2_path = "/media/cacious/share/luggage_detect/reid_code/reid_code/dataset/2.png"
 img2 = pic2tensor(img2_path)
 
 img = torch.cat([img1, img2], dim=0)

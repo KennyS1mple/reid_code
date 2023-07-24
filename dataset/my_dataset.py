@@ -64,7 +64,7 @@ class MyDataset(Dataset):
 
         """ 图片曝光增强 """
         if self.sv_augmentation:
-            fraction = 0.50
+            fraction = 0.30
             img_hsv = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
             S = img_hsv[:, :, 1].astype(np.float32)
             V = img_hsv[:, :, 2].astype(np.float32)

@@ -1,3 +1,4 @@
 /.idea
 /weight
-/dataset/luggage1.png
+/dataset/*.png
+/dataset/*.jpg
