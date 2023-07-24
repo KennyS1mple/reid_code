@@ -3,6 +3,8 @@
 # File name: train
 # Desc     :script for training reid
 
+import time
+
 from opt import opts
 from model.model import *
 from torch.utils.data import DataLoader
@@ -12,6 +14,8 @@ from network.reid_training_model import TrainingModel
 
 # 获取参数
 opt = opts()
+
+today = time.strftime('%m%d_%H', time.localtime(time.time()))
 
 opt.device = torch.device(("cuda:0" if torch.cuda.is_available() else "cpu")
                           if opt.gpus[0] >= 0 else 'cpu')
@@ -47,11 +51,12 @@ for epoch in range(opt.epochs):
           "---acc: " + str((correct / len(my_dataset)).item()))
 
     if epoch % 10 == 0 and epoch > 0:
-        save_model("./weight/dla_training_weights_{}.pth".format(epoch),
+        # dla_md_h_epoch.pth
+        save_model(f"./weight/dla_{today}_{epoch}.pth",
                    epoch, training_model, optimizer)
         print(f"model saved successfully.epoch:{epoch}")
     if opt.epochs - epoch < 10:
-        save_model("./weight/dla_training_weights_{}.pth".format(epoch),
+        save_model(f"./weight/dla_{today}_{epoch}.pth",
                    epoch, training_model, optimizer)
         print(f"model saved successfully.epoch:{epoch}")
 

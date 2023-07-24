@@ -17,7 +17,4 @@ from opt import opts
 # img_path = os.path.join(opt.dataset_path, "obj_img")
 # print(len(os.listdir(img_path)))
 
-img = PIL.Image.open("dataset/luggage1.png").convert("RGB")
-img.show()
-img1 = numpy.asarray(img)
-print(img1.shape)
+
