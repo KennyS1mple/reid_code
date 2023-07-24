@@ -1,6 +1,6 @@
 # CACIOUS CODING
 # Data     : 6/1/23  7:59 PM
-# File name: pose_dla_dcn.py
+# File name: pose_dla_dcn
 # Desc     : model config
 
 from __future__ import absolute_import
